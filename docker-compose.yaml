@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  n8n:
+    image: n8nio/n8n:nightly
+    container_name: n8n
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - WEBHOOK_URL=https://stirruplike-unagilely-denita.ngrok-free.dev
+      - GENERIC_TIMEZONE=America/Toronto
+      - TZ=America/Toronto
+    volumes:
+      - ~/.n8n:/home/node/.n8n
