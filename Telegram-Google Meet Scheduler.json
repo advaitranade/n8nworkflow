@@ -196,7 +196,14 @@
         },
         "start": "={{ $json.output.start_time }}",
         "end": "={{ $json.output.end_time }}",
-        "additionalFields": {}
+        "additionalFields": {
+          "conferenceDataUi": {
+            "conferenceDataValues": {
+              "conferenceSolution": "hangoutsMeet"
+            }
+          },
+          "summary": "Meeting Scheduld through N8N"
+        }
       },
       "type": "n8n-nodes-base.googleCalendar",
       "typeVersion": 1.3,
@@ -274,8 +281,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1536,
-        -16
+        1744,
+        -32
       ],
       "id": "0bb6b4bc-d96e-4f54-8e43-3c26fd37d55e",
       "name": "Send a text message",
@@ -417,7 +424,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "99e4eb70-63a7-4498-a0c0-38d2eff39408",
+  "versionId": "deb7a44b-c81b-4ac1-96cf-daf8a7333a14",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "0dd029c4007ddd3c0495b6e24e590ecef5a9ecc12a24b3558ee352996b6abe7b"
